@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '/opt/sbt/bin/sbt-launch.jar clean'
+                sh '/opt/sbt/bin/sbt clean'
             }
         }
         stage('Test') {
